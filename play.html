@@ -36,6 +36,27 @@
 
     </header>
     <main>
+        <!-- reference game is from geeksforgeeks (https://www.geeksforgeeks.org/building-a-dice-game-using-javascript/) -->
+        <div class="dice-container">
+            <!-- font Awesome dice icons-->
+            <div class="single-dice">
+                <p class="Player1">Player 1</p>
+                <i id="dice-1" class="fas fa-dice-one"></i>
+            </div>
+
+            <div class="single-dice">
+                <p class="Player2">Player 2</p>
+                <i id="dice-2" class="fas fa-dice-one"></i>
+            </div>
+        </div>
+        <div class="dice-container">
+            <button type="button" id="roll-btn" onclick="playDiceSound()" onClick="rollTheDice()">Roll Dice</button>
+        </div>
+        <div class="dice-container">
+            <button type="button" id="edit-btn" onclick="playDiceSound()" onClick="editNames()">
+                Edit Names
+            </button>
+        </div>
 
     </main>
 
@@ -67,7 +88,7 @@
 
     <!-- Font Awesome Kit -->
     <script src="https://kit.fontawesome.com/3b20d96fa9.js" crossorigin="anonymous"></script>
-    
+
     <!-- noscript is for the browser that does not support javascript -->
     <noscript>
         Your browser does not support JavaScript!
