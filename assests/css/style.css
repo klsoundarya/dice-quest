@@ -237,3 +237,55 @@ footer {
     margin: 2px;
 }
 
+/*********** Responsive Styles ***********/
+
+/* Media query: large mobiles, tablets and laptops and desktops (425px and up) */
+@media screen and (min-width: 425px) {
+    li {
+        font-size: 18px;
+        padding-left: 10px;
+        margin-left: 15px;
+    }
+
+    #play-btn,
+    #rules-btn {
+        font-size: 18px;
+    }
+
+    #game-basics {
+        top: 150%;
+        width: 100%;
+    }
+
+    /* Large mobiles & tablets (680px and up) */
+    @media screen and (min-width: 680px) {
+
+        #game-basics {
+            top: 20px;
+        }
+
+        /* Large devices (1000px and up) */
+        @media screen and (min-width: 1000px) {
+            li {
+                font-size: 19px;
+                margin-left: 15px;
+
+            }
+
+            #play-btn,
+            #rules-btn {
+                font-size: 19px;
+            }
+
+            #game-basics {
+                margin-top: 35px;
+                font-size: 19px;
+                width: 75%;
+            }
+
+            #play-btn {
+                font-size: 19px;
+            }
+        }
+    }
+}
