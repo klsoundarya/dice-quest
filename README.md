@@ -42,4 +42,3 @@ Dice games have been enjoyed for centuries, offering endless entertainment with 
   - [Disclaimer](#disclaimer)
 
 ### User Stories
-

@@ -57,6 +57,47 @@ header {
     animation: flicker 2s infinite alternate, rotate 3s linear infinite;
 }
 
+@keyframes flicker {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/**************** zoom hover is from w3schools (https://www.w3schools.com/howto/howto_css_zoom_hover.asp) ********************/
+#logo:hover {
+    transform: scale(1.2);
+    animation: colorChange 2s infinite alternate;
+}
+
+@keyframes colorChange {
+    0% {
+        color: black;
+    }
+
+    100% {
+        color: #ffffff;
+    }
+}
+
+
 /*********** Main content *********************/
 main {
     width: 100%;
