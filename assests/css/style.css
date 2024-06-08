@@ -1,0 +1,84 @@
+/************* Google fonts import ***************/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+/************ Asterisk wildcard selector to override default styles added by the browser **************/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*********** General Styles ***********/
+
+body {
+    margin: 0;
+    font-family: 'Merriweather', 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    height: 100%
+}
+
+/************ Header styling ***********/
+/*********** background-image is from w3schools (https://www.w3schools.com/css/css3_gradients.asp) **********/
+
+header {
+    width: 100%;
+    padding: 10px 20px;
+    text-align: center;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.93), rgba(91, 235, 255, 0.83));
+    box-shadow: 0px 5px 5px hsl(0, 0%, 0%);
+    z-index: 5;
+    position: relative;
+}
+
+.logo-container {
+    display: inline-block;
+    margin: 0px;
+}
+
+.logo-link {
+    text-decoration: none;
+}
+
+#logo {
+    font-size: 26px;
+    padding: 15px;
+    color: #ffff00;
+}
+
+/*********** dice icon flicker and rotate transform animation is from CSS tricks***************/
+/*********** Applied animation and below keyframes from CSS tricks (https://css-tricks.com/almanac/properties/a/animation/) ***********/
+#logo i {
+    margin: 0 2px;
+    font-size: x-large;
+    animation: flicker 2s infinite alternate, rotate 3s linear infinite;
+}
+
+/*********** Main content *********************/
+main {
+    width: 100%;
+    padding: 20px;
+    z-index: 1;
+    position: relative;
+    flex: 1 0 auto;
+    flex-grow: 1;
+}
+
+/************** background video styling *****************/
+
+#bg-video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.background-video {
+    object-fit: cover;
+}
