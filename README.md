@@ -1,9 +1,9 @@
-# Shut the Box
+# Dice Quest
 
-"Shut the Box" is a classic dice game traditionally played on a wooden board with tiles numbered 1 to 9 or 1 to 12. Players roll dice and flip down tiles that match the numbers they roll. The aim is to flip down all the tiles, or "shut the box," by making strategic decisions based on the dice rolls. It's a game of both luck and strategy that can be enjoyed alone or with others. Now, users/players can enjoy this timeless game virtually through my gaming webpage.
+Dice games have been enjoyed for centuries, offering endless entertainment with their simple yet engaging mechanics. Each game brings its own set of rules and strategies, making them suitable for various ages and preferences. It's a game of both luck and strategy that can be enjoyed alone or with others. Now, users/players can enjoy this timeless game virtually through my gaming webpage.
 
-- GitHub Profile: <https://github.com/klsoundarya/shut-the-box>
-- Deployed Site: <https://klsoundarya.github.io/shut-the-box/>
+- GitHub Profile: <https://github.com/klsoundarya/dice-quest>
+- Deployed Site: <https://klsoundarya.github.io/dice-quest>
 
 ![Am I Responsive](read-me/am-i-responsive/am-i-responsive.PNG)
 
@@ -42,7 +42,6 @@
   - [Disclaimer](#disclaimer)
 
 ### User Stories
-<!-- Read few README documents of previous batches to understand user stories and wrote accordingly -->
 
 #### First time User Goals
 

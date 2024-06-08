@@ -9,7 +9,8 @@
     <!-- Meta tags for search engines -->
     <meta name="description"
         content="Embark on an exciting adventure in Dice Quest, where every roll of the dice leads you closer to win. Experience the thrill of chance and strategy in this captivating dice game.">
-    <meta name="keywords" content="Dice game, Adventure, Quest, Strategy, Chance, Obstacle, Mystical realms, Epic quests, Thrill">
+    <meta name="keywords"
+        content="Dice game, Adventure, Quest, Strategy, Chance, Obstacle, Mystical realms, Epic quests, Thrill">
     <!-- Title -->
     <title>Dice Quest</title>
     <!-- Favicon -->
@@ -33,5 +34,83 @@
             </div>
         </a>
 
+        <!-- The video element is from w3 schools(https://www.w3schools.com/html/html5_video.asp) -->
+        <!-- hero background-video is from canva -->
+        <div id="bg-video-container">
+            <video class="background-video" autoplay muted loop>
+                <source src="assests/videos/hero-bg.mp4" type="video/mp4">
+                <source src="assests/videos/hero-bg.mp4" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- buttons for start game, game rules -->
+        <section id="game-basics">
+            <div class="buttons">
+                <h3 id="rules-btn"><i class="fa-solid fa-gamepad"></i><b class="highlight-the-btn">Game Rules</b></h3>
+                <ol>
+                    <li>Each player takes turns rolling two dice.</li>
+                    <li>The players can decide who goes first by rolling one die each, with the highest roll starting
+                        the game.</li>
+                    <li>If the player rolls a double (both dice show the same number), they get to roll again, the sum
+                        of the numbers rolled is added to the player's current score.
+                        <ul>
+                            <li>
+                                <b>Example:</b> If a player rolls a double <i class="fa-solid fa-dice-six"></i>, their
+                                current turn's score is reset to 0, and their turn ends.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>If a player rolls any other double (1-1, 2-2, 3-3, 4-4, or 5-5), they get to roll again and add
+                        the new roll to their current score.</li>
+                    <li>The player can choose to "hold" and not roll again, which means their current score is added to
+                        their total score, and their turn ends.</li>
+                    <li><b>Restart:</b> Click "Reset" to start the game over anytime.</li>
+                </ol>
+            </div>
+            <div class="buttons">
+                <a href="play.html" id="play-btn"><i class="fa-solid fa-play"></i><b
+                        class="highlight-the-btn">Play</b></a>
+            </div>
+        </section>
+        </main>
 
     </header>
+
+    <!-- footer section -->
+    <footer>
+        <div class="social-forms">
+            <!-- copy right -->
+            <ul id="online-platforms">
+                <li><a class="game-Page" href="index.html" aria-label="It takes to the home page"><i
+                            class="fa-solid fa-house-circle-check"></i></a>
+                </li>
+                <li><a href="https://www.linkedin.com/in/soundarya-kantimahanti/" target="_blank"
+                        aria-label="Visit my linkdIn Page(The page opens up in a new tab)" rel="noopener"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+                <li><a href="https://github.com/klsoundarya" target="_blank"
+                        aria-label="Visit my github page(The page opens up in a new tab)" rel="noopener"><i
+                            class="fa-brands fa-github"></i></a>
+                </li>
+            </ul>
+            <p id="rights-reserved"><i class="fa-regular fa-copyright"></i><strong>Created by Soundarya, 2024.</strong>
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript file -->
+    <script src="assests/js/dice.js"></script>
+    <script src="assests/js/game.js"></script>
+
+    <!-- Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/3b20d96fa9.js" crossorigin="anonymous"></script>
+
+    <!-- noscript is for the browser that does not support javascript -->
+    <noscript>
+        Your browser does not support JavaScript!
+    </noscript>
+
+</body>
+
+</html>
