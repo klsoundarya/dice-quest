@@ -40,23 +40,45 @@
         <div class="dice-container">
             <!-- font Awesome dice icons-->
             <div class="single-dice">
-                <p class="Player1">Player 1</p>
+                <p id="Player1">Player 1</p>
                 <i id="dice-1" class="fas fa-dice-one"></i>
             </div>
 
             <div class="single-dice">
-                <p class="Player2">Player 2</p>
+                <p id="Player2">Player 2</p>
                 <i id="dice-2" class="fas fa-dice-one"></i>
             </div>
+            <div class="game-container">
+                <button type="button" id="roll-btn" onclick="playDiceSound()" onClick="rollTheDice()">Roll Dice</button>
+            </div>
+            <div class="game-container">
+                <button type="button" id="edit-btn" onclick="playDiceSound()" onClick="editNames()">
+                    Edit Names
+                </button>
+            </div>
+
+            <!-- Audio files -->
+            <!-- code is from (https://www.geeksforgeeks.org/how-to-preload-an-audio-in-html5/) -->
+
+            <audio id="dice-sound" src="assests/audios/dice-sound.mp3" preload="auto"></audio>
+
+            <div class="settings-toggle">
+                <!-- reset button -->
+                <a class="game-Page" href="play.html" aria-label="restart the game from the start"><i
+                        class="fa-solid fa-retweet"></i><b>Restart</b></a>
+                <br>
+                <!-- exit button -->
+                <a class="game-Page" href="exit.html" aria-label="exit the game"><i
+                        class="fa-solid fa-person-walking-arrow-right"></i><b>Exit</b></a>
+                <br>
+                <!-- mute and unmute buttons -->
+                <a class="game-Page" id="mute-audio" href="#" aria-label="mute the audio"><i
+                        class="fa-solid fa-volume-high"></i><b>Mute</b></a>
+
+                <a href="#" id="unmute-audio" class="hidden"><i class="fa-solid fa-volume-xmark"></i>Unmute</a>
+            </div>
         </div>
-        <div class="dice-container">
-            <button type="button" id="roll-btn" onclick="playDiceSound()" onClick="rollTheDice()">Roll Dice</button>
-        </div>
-        <div class="dice-container">
-            <button type="button" id="edit-btn" onclick="playDiceSound()" onClick="editNames()">
-                Edit Names
-            </button>
-        </div>
+
 
     </main>
 
