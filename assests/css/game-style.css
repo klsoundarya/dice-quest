@@ -42,7 +42,6 @@ body {
 #Player1,
 #Player2 {
     padding-bottom: 8px;
-    text-align: center;
     font-size: 26px;
     font-family: "Almendra", cursive;
     color: rgba(255, 255, 0, 0.797);
@@ -62,7 +61,7 @@ body {
     font-size: 65px;
     margin: 10px 0px 10px 8px;
     padding: 10px;
-    color: #ffffff;
+    color: lightgray;
 }
 
 /* button styling for roll Dice and edit names */
@@ -71,8 +70,8 @@ body {
 #edit-btn {
     margin: 10px, 15px, 20px, 10px;
     padding: 10px 20px;
-    border-radius: 10px;
-    background-color: yellow;
+    border-radius: 54px;
+    background-color: rgba(255, 255, 0, 0.671);
     border: 2px double #cec3c4;
     color: black;
     font-size: 18px;
@@ -130,7 +129,7 @@ body {
 /* Media query: mobiles and large devices (365px and up) */
 @media screen and (min-width: 365px) {
     main {
-        top: 50px;
+        top: 30px;
     }
 
     #roll-btn,
@@ -138,7 +137,7 @@ body {
         font-size: 18px;
         text-align: center;
     }
-    
+
     /* Media query: tablets, laptops and desktops (768px and up) */
     @media screen and (min-width: 768px) {
         main {
@@ -149,6 +148,10 @@ body {
         @media screen and (min-width: 1000px) {
             main {
                 padding-left: 55px;
+            }
+
+            .game-container {
+                padding-left: 10px;
             }
 
             #dice-1,
