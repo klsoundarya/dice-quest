@@ -124,3 +124,50 @@ body {
     transition: 0.5s;
     cursor: pointer;
 }
+
+
+/**************** mute and unmute button styling ******************/
+
+.hidden {
+    display: none;
+}
+
+#unmute-audio {
+    color: #eb8d74;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/*********** Responsive Styles ***********/
+
+/* Media query: mobiles and large devices (375px and up) */
+@media screen and (min-width: 375px) {
+
+
+    #roll-btn,
+    #edit-btn {
+        font-size: 18px;
+        text-align: center;
+    }
+
+
+    /* Media query: tablets, laptops and desktops (768px and up) */
+    @media screen and (min-width: 768px) {
+        main {
+            padding-left: 35px;
+        }
+
+        /* Large devices (1000px and up) */
+        @media screen and (min-width: 1000px) {
+            main {
+                padding-left: 55px;
+            }
+
+            #dice-1,
+            #dice-2 {
+                font-size: 85px;
+                width: 100px;
+            }
+        }
+    }
+}
