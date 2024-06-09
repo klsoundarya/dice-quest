@@ -12,6 +12,10 @@ main {
     margin-bottom: 20px;
 }
 
+body {
+    background-color: lightcyan;
+}
+
 /*************** dice styling ********************/
 /* Took reference from (https://www.geeksforgeeks.org/building-a-dice-game-using-javascript/) */
 
@@ -19,20 +23,21 @@ main {
     width: 70%;
     text-align: center;
     max-width: 790vw;
-    border: 8px solid #aea3a4;
+    border: 8px solid rgb(86, 105, 105);
     border-radius: 5px;
     background-color: #2d3656;
     padding: 0 4px;
     margin: 30px 10px 30 0px;
     width: 90vw;
-    box-shadow: 15px 6px 10px rgba(0, 0, 0, 0.481);
+    box-shadow: 15px 16px 10px rgba(0, 0, 0, 0.481);
+
 }
 
 .single-dice {
     text-align: center;
     display: inline-block;
     margin: 15px;
-    color: white;
+    color: #ffffff;
 }
 
 #Player1,
@@ -40,8 +45,11 @@ main {
     padding-bottom: 8px;
     text-align: center;
     font-size: 2rem;
-    font-family: "Alegreya", sans-serif;
+    font-family: "Almendra", cursive;
     color: rgba(255, 255, 0, 0.797);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 #dice-1,
@@ -49,14 +57,70 @@ main {
     border: 2px double #cec3c4;
     border-radius: 4px;
     aspect-ratio: 1 / 1;
-    width: 70px;
+    width: 90px;
     background: transparent;
     box-shadow: 5px 9px #000000;
     align-items: center;
     display: flex;
     justify-content: center;
-    font-size: 45px;
-    margin: 10px 10px 10px 25px;
+    font-size: 65px;
+    margin: 10px 0px 10px 8px;
     padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: #ffffff;
 }
 
+/* button styling for roll Dice and edit names */
+
+.game-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#roll-btn,
+#edit-btn {
+    margin: 10px, 15px, 20px, 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgb(196, 117, 48);
+    border: 2px double #cec3c4;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#roll-btn:hover {
+    background-color: rgb(204, 221, 13);
+    color: black;
+}
+
+/**************** reset, exit and mute button styling ******************/
+
+.settings-toggle {
+    margin-bottom: 50px;
+    margin-top: 20px;
+    padding: 5px 30px 5px 30px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.123);
+}
+
+.game-Page {
+    color: #eb8d74;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.settings-toggle i {
+    padding-right: 4px;
+}
+
+.settings-toggle a:hover {
+    background: transparent;
+    font-size: 26px;
+    box-shadow: 10px 5px 5px rgb(255, 255, 255);
+    transition: 0.5s;
+    cursor: pointer;
+}
