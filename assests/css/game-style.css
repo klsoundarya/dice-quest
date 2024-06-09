@@ -1,0 +1,62 @@
+/* main body styling */
+main {
+    width: 100%;
+    padding: 19px;
+    z-index: 1;
+    position: relative;
+    flex: 1 0 auto;
+    flex-grow: 1;
+    bottom: 30px;
+    top: 10px;
+    right: 5px;
+    margin-bottom: 20px;
+}
+
+/*************** dice styling ********************/
+/* Took reference from (https://www.geeksforgeeks.org/building-a-dice-game-using-javascript/) */
+
+.dice-container {
+    width: 70%;
+    text-align: center;
+    max-width: 790vw;
+    border: 8px solid #aea3a4;
+    border-radius: 5px;
+    background-color: #2d3656;
+    padding: 0 4px;
+    margin: 30px 10px 30 0px;
+    width: 90vw;
+    box-shadow: 15px 6px 10px rgba(0, 0, 0, 0.481);
+}
+
+.single-dice {
+    text-align: center;
+    display: inline-block;
+    margin: 15px;
+    color: white;
+}
+
+#Player1,
+#Player2 {
+    padding-bottom: 8px;
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Alegreya", sans-serif;
+    color: rgba(255, 255, 0, 0.797);
+}
+
+#dice-1,
+#dice-2 {
+    border: 2px double #cec3c4;
+    border-radius: 4px;
+    aspect-ratio: 1 / 1;
+    width: 70px;
+    background: transparent;
+    box-shadow: 5px 9px #000000;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+    margin: 10px 10px 10px 25px;
+    padding: 15px;
+}
+
