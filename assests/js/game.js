@@ -1,4 +1,4 @@
-// Took reference from(https://www.w3schools.com/tags/av_prop_muted.asp)
+// Took reference from(https://www.w3schools.com/tags/av_prop_muted.asp) & (https://www.w3schools.com/jsref/prop_element_classlist.asp)
 //DOM Elements
 const muteIcon = document.getElementById('mute-audio');
 muteIcon.muted = true;
