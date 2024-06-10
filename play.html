@@ -37,21 +37,22 @@
     </header>
     <main>
         <!-- reference game is from geeksforgeeks (https://www.geeksforgeeks.org/building-a-dice-game-using-javascript/) -->
+        <h2 id="welcome">Welcome to Dice Quest!</h2>
         <div class="dice-container">
             <!-- font Awesome dice icons-->
             <div class="single-dice">
                 <p id="Player1">Player 1</p>
                 <i id="dice-1" class="fas fa-dice-one"></i>
+                <p id="Player1Score">Player 1: 0</p>
             </div>
             <div class="single-dice">
                 <p id="Player2">Player 2</p>
                 <i id="dice-2" class="fas fa-dice-one"></i>
+                <p id="Player2Score">Player 2: 0</p>
             </div>
             <div class="game-container">
-                <button type="button" id="roll-btn" onclick="playDiceSound()" onClick="rollTheDice()">Roll Dice</button>
-                <button type="button" id="edit-btn" onclick="playDiceSound()" onClick="editNames()">
-                    Edit Names
-                </button>
+                <button type="button" id="roll-btn" onClick="rollTheDice()">Roll Dice</button>
+                <button type="button" id="edit-btn" onClick="editNames()">Edit Names</button>
             </div>
 
             <!-- Audio files -->

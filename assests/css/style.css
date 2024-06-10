@@ -263,10 +263,16 @@ footer {
 
         #game-basics {
             top: 20px;
+            width: 60%;
         }
 
         /* Large devices (1000px and up) */
         @media screen and (min-width: 1000px) {
+
+            #game-basics {
+                width: 50%;
+            }
+
             li {
                 font-size: 19px;
                 margin-left: 15px;
@@ -287,6 +293,13 @@ footer {
             #play-btn {
                 font-size: 19px;
             }
+
+            /* Large laptop devices (1100px and up) */
+            @media screen and (min-width: 1100px) {
+
+                #game-basics {
+                    width: 50%;
+                }
+            }
         }
     }
-}

@@ -12,8 +12,15 @@ main {
     margin-bottom: 20px;
 }
 
+#welcome {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #006400;
+}
+
 body {
-    background-color: lightcyan;
+    background-color: #e0ffff;
 }
 
 /*************** dice styling ********************/
@@ -81,8 +88,14 @@ body {
 #roll-btn:hover {
     background-color: rgb(204, 221, 13);
     color: black;
+    box-shadow: 2px 5px 5px rgb(255, 255, 255);
 }
 
+#edit-btn:hover {
+    background-color: rgb(204, 221, 13);
+    color: black;
+    box-shadow: 2px 5px 5px rgb(255, 255, 255);
+}
 /**************** reset, exit and mute button styling ******************/
 
 .settings-toggle {

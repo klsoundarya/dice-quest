@@ -21,5 +21,15 @@ function unmuteAudio() {
     unmuteIcon.classList.add('hidden');
 }
 
+// Add event listeners to mute and unmute icons from (https://www.geeksforgeeks.org/javascript-addeventlistener-with-examples/) & (https://www.w3schools.com/jsref/event_preventdefault.asp)
+muteIcon.addEventListener('click', function (event) {
+    event.preventDefault();
+    muteAudio();
+});
+
+unmuteIcon.addEventListener('click', function (event) {
+    event.preventDefault();
+    unmuteAudio();
+});
 
 
