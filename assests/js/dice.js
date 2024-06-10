@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 player2Score = 0;
                 rounds = 0;
             }
-        }, 300);
+        }, 900);
 
     }
 

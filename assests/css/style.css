@@ -188,6 +188,32 @@ li {
     border-radius: 5px;
 }
 
+/* 404 page not found */
+
+.container {
+    text-align: center;
+    font-size: 14px;
+    width: 70%;
+}
+
+.container h1 {
+    margin-left: 50px;
+}
+
+#not-found {
+    width: 100%;
+    margin-left: 15px;
+}
+
+.container p {
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: "Verdana", Tahoma, sans-serif;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+
 /****************** footer ******************/
 
 footer {
@@ -258,12 +284,25 @@ footer {
         width: 100%;
     }
 
+    /* page not found */
+
+    .container {
+        width: 50%;
+    }
+
+
     /* Large mobiles & tablets (680px and up) */
     @media screen and (min-width: 680px) {
 
         #game-basics {
             top: 20px;
             width: 60%;
+        }
+
+        /* page not found */
+
+        .container {
+            width: 40%;
         }
 
         /* Large devices (1000px and up) */
@@ -299,6 +338,13 @@ footer {
 
                 #game-basics {
                     width: 50%;
+                }
+
+
+                /* page not found */
+
+                .container {
+                    width: 30%;
                 }
             }
         }
