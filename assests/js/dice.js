@@ -48,4 +48,49 @@ document.addEventListener('DOMContentLoaded', function () {
             //Add click event listener for dice sound
 
             playDiceSound();
-        }
+
+            if (roll1 === roll2) {
+                document.querySelector("h2#welcome").innerHTML = "Match is Draw!";
+            } else if (roll1 < roll2) {
+                document.querySelector("h2#welcome").innerHTML = player2 + " " + "Won this Round"; player2Score++;
+            } else {
+                document.querySelector("h2#welcome").innerHTML = player1 + " " + "Won this Round"; player1Score++;
+            }
+            rounds++;
+
+
+            // Update scores
+            document.querySelector("p#Player1Score").innerHTML = player1 + ": " + player1Score;
+            document.querySelector("p#Player2Score").innerHTML = player2 + ": " + player2Score;
+
+            // Check if the game is over
+            if (rounds >= maxRounds) {
+                let winner;
+                if (player1Score > player2Score) {
+                    winner = player1 + " is the overall winner!";
+                } else if (player1Score < player2Score) {
+                    winner = player2 + " is the overall winner!";
+                } else {
+                    winner = "It's a draw!";
+                }
+                document.querySelector("h2#welcome").innerHTML = winner;
+                // Reset scores and rounds for a new game
+                player1Score = 0;
+                player2Score = 0;
+                rounds = 0;
+            }
+        }, 300);
+
+    }
+
+    // Function to play dice roll sound and currentTime is from w3 schools (https://www.w3schools.com/tags/av_prop_currenttime.asp)
+    function playDiceSound() {
+        const diceSound = document.getElementById("dice-sound");
+        diceSound.currentTime = 0; // Reset sound to start
+        diceSound.play();
+    }
+
+    document.getElementById('roll-btn').addEventListener('click', rollDice);
+    document.getElementById('edit-btn').addEventListener('click', changeNames);
+
+});
