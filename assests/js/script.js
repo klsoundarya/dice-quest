@@ -1,9 +1,7 @@
-// JavaScript code to create the dice game with sound effects
 document.addEventListener('DOMContentLoaded', function () {
     // Player names
-
-    let player1 = "Player 1";
-    let player2 = "Player 2";
+    let player1 = "";
+    let player2 = "";
 
     // Player scores
     let player1Score = 0;
@@ -14,17 +12,25 @@ document.addEventListener('DOMContentLoaded', function () {
     // Function to change the player name
 
     function changeNames() {
-        player1 = prompt("Change Player1 name");
-        player2 = prompt("Change Player2 name");
+        player1 = prompt("Enter Player1 name");
+        player2 = prompt("Enter Player2 name");
 
-        document.querySelector("p#Player1").innerHTML = player1;
-        document.querySelector("p#Player2").innerHTML = player2;
+        if (player1 && player2) {
+            document.querySelector("p#Player1").innerHTML = player1;
+            document.querySelector("p#Player2").innerHTML = player2;
+            document.querySelector("h2#welcome").innerHTML = "Welcome to Dice Quest!";
+        } else {
+            alert("Both players must enter their names to start the game.");
+        }
     }
 
-    // Function to roll the dice
+    // Prompt for player names when the page loads
+    changeNames();
+
+       // Function to roll the dice
     // Took reference from (https://www.w3schools.com/jsref/met_win_settimeout.asp)
 
-    function rollDice() {
+    function rollTheDice() {
         setTimeout(function () {
             const die1 = document.getElementById('dice-1');
             const die2 = document.getElementById('dice-2');
@@ -41,23 +47,19 @@ document.addEventListener('DOMContentLoaded', function () {
                 'fas fa-dice-six'
             ];
 
-            // Update dice faces
             die1.className = diceFaces[roll1 - 1];
             die2.className = diceFaces[roll2 - 1];
-
-            //Add click event listener for dice sound
 
             playDiceSound();
 
             if (roll1 === roll2) {
                 document.querySelector("h2#welcome").innerHTML = "Match is Draw!";
             } else if (roll1 < roll2) {
-                document.querySelector("h2#welcome").innerHTML = player2 + " " + "Won this Round"; player2Score++;
+                document.querySelector("h2#welcome").innerHTML = "Welcome to Dice Quest!"; player2Score++;
             } else {
-                document.querySelector("h2#welcome").innerHTML = player1 + " " + "Won this Round"; player1Score++;
+                document.querySelector("h2#welcome").innerHTML = "Welcome to Dice Quest!"; player1Score++;
             }
             rounds++;
-
 
             // Update scores
             document.querySelector("p#Player1Score").innerHTML = player1 + ": " + player1Score;
@@ -67,30 +69,33 @@ document.addEventListener('DOMContentLoaded', function () {
             if (rounds >= maxRounds) {
                 let winner;
                 if (player1Score > player2Score) {
-                    winner = player1 + " is the overall winner!";
+                    winner = player1 + " is the overall winner! Click 'Start New Game' to play again.";
                 } else if (player1Score < player2Score) {
-                    winner = player2 + " is the overall winner!";
+                    winner = player2 + " is the overall winner! Click 'Start New Game' to play again.";
                 } else {
-                    winner = "It's a draw!";
+                    winner = "It's a draw! Click 'Start New Game' to play again.";
                 }
+
                 document.querySelector("h2#welcome").innerHTML = winner;
+
                 // Reset scores and rounds for a new game
                 player1Score = 0;
                 player2Score = 0;
                 rounds = 0;
             }
-        }, 900);
-
+        }, 700);
     }
 
-    // Function to play dice roll sound and currentTime is from w3 schools (https://www.w3schools.com/tags/av_prop_currenttime.asp)
+    // Function to play dice roll sound sound and currentTime is from w3 schools (https://www.w3schools.com/tags/av_prop_currenttime.asp)
     function playDiceSound() {
         const diceSound = document.getElementById("dice-sound");
-        diceSound.currentTime = 0; // Reset sound to start
+        diceSound.currentTime = 0;
         diceSound.play();
     }
 
-    document.getElementById('roll-btn').addEventListener('click', rollDice);
+    document.getElementById('roll-btn').addEventListener('click', rollTheDice);
     document.getElementById('edit-btn').addEventListener('click', changeNames);
 
 });
+
+

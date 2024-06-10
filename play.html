@@ -51,9 +51,11 @@
                 <p id="Player2Score">Player 2: 0</p>
             </div>
             <div class="game-container">
-                <button type="button" id="roll-btn" onClick="rollTheDice()">Roll Dice</button>
-                <button type="button" id="edit-btn" onClick="editNames()">Edit Names</button>
+                <button type="button" id="roll-btn" onClick="rollTheDice()"><b>Roll Dice</b></button>
+                <button type="button" id="edit-btn" onClick="changeNames()"><b>Edit Names</b></button>
             </div>
+            <br>
+            <a href="play.html" id="new-game-btn" aria-label="restarts the game from the start"><b>Start New Game</b></a>
 
             <!-- Audio files -->
             <!-- code is from (https://www.geeksforgeeks.org/how-to-preload-an-audio-in-html5/) -->
@@ -103,7 +105,7 @@
     </footer>
 
     <!-- JavaScript file -->
-    <script src="assests/js/dice.js"></script>
+    <script src="assests/js/script.js"></script>
     <script src="assests/js/game.js"></script>
 
     <!-- Font Awesome Kit -->

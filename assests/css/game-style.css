@@ -7,7 +7,7 @@ main {
     flex: 1 0 auto;
     flex-grow: 1;
     bottom: 30px;
-    top: 40px;
+    top: 25px;
     right: 5px;
     margin-bottom: 20px;
 }
@@ -59,12 +59,10 @@ body {
 
 #dice-1,
 #dice-2 {
-    border: 2px double #cec3c4;
     border-radius: 4px;
     aspect-ratio: 1 / 1;
     width: 90px;
     background: transparent;
-    box-shadow: 5px 9px #000000;
     font-size: 65px;
     margin: 10px 0px 10px 8px;
     padding: 10px;
@@ -74,8 +72,8 @@ body {
 /* button styling for roll Dice and edit names */
 
 #roll-btn,
-#edit-btn {
-    margin: 10px, 15px, 20px, 10px;
+#edit-btn, #new-game-btn {
+    margin: 10px, 15px, 25px, 10px;
     padding: 10px 20px;
     border-radius: 54px;
     background-color: rgba(255, 255, 0, 0.671);
@@ -85,17 +83,18 @@ body {
     cursor: pointer;
 }
 
-#roll-btn:hover {
+#new-game-btn {
+    text-decoration: none;
+}
+
+#roll-btn:hover,
+#edit-btn:hover,
+#new-game-btn:hover {
     background-color: rgb(204, 221, 13);
     color: black;
     box-shadow: 2px 5px 5px rgb(255, 255, 255);
 }
 
-#edit-btn:hover {
-    background-color: rgb(204, 221, 13);
-    color: black;
-    box-shadow: 2px 5px 5px rgb(255, 255, 255);
-}
 /**************** reset, exit and mute button styling ******************/
 
 .settings-toggle {
@@ -146,7 +145,8 @@ body {
     }
 
     #roll-btn,
-    #edit-btn {
+    #edit-btn,
+    #new-game-btn {
         font-size: 18px;
         text-align: center;
     }
