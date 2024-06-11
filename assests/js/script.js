@@ -97,13 +97,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 player2Score = 0;
                 rounds = 0;
 
-                // Disable the roll button
-                document.getElementById('roll-btn').disabled = true;
-
                 // Enable the roll button after the user starts a new game
                 document.getElementById('start-new-game-btn').addEventListener('click', function () {
                     document.querySelector("h2#welcome").innerHTML = "Welcome to Dice Quest!";
-                    document.getElementById('roll-btn').disabled = false;
                     document.querySelector("p#Player1Score").innerHTML = player1 + ": " + player1Score;
                     document.querySelector("p#Player2Score").innerHTML = player2 + ": " + player2Score;
                 });

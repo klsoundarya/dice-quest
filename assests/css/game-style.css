@@ -84,7 +84,7 @@ body {
 }
 
 #roll-btn {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 #new-game-btn {
@@ -125,6 +125,14 @@ body {
     box-shadow: 10px 5px 5px rgb(255, 255, 255);
     transition: 0.5s;
     cursor: pointer;
+}
+
+#rules {
+    color: white;
+    padding-bottom: 5px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-family: 'Lucida Sans', Verdana, sans-serif;
 }
 
 
