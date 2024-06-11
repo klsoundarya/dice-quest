@@ -324,6 +324,9 @@ JSHint was used to look for errors in flap.js, dice.js and game.js. No errors fo
 | 2  | ![Bug 2](read-me/bugs/play-css.PNG)          | Modified the units value error to fix the bug.                                                                          | Fixed the bug. |
 | 3  | ![Bug 3](read-me/bugs/gamejs-hint.PNG)       | I added jshint esversion: 6 to fix the warnings in the JSHint.                                                          | Fixed the bug. |
 | 4  | ![Bug 4](read-me/bugs/exit-html.PNG)         | Removed the extra line of tag element.                                                                                  | Fixed the bug. |
+| 5 	| ![Bug 5](read-me/bugs/name-change.PNG) 	| When the user clicks the "Edit Name" button, the player names are successfully updated, but the corresponding scores in the scoreboard area remain unchanged. To resolve this issue, I implemented a solution by calling the player scores after updating the player names. This ensures that the scoreboard names are updated in real-time, reflecting the latest changes made by the user. 	| Fixed the bug. 	|
+| 6 	| ![Bug 6](read-me/bugs/null.PNG)        	| When a user clicks the "Cancel" button in the prompt without entering a new name, the player1Score and player2Score variables are updated to null. This causes the scoreboard to display null instead of the original names. To fix this issue, I used conditional operators to check if the user has entered a new name before updating the scoreboard.                                     	| Fixed the bug.	|
+
 
 ### Unfixed Bugs
 

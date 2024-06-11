@@ -14,15 +14,27 @@ document.addEventListener('DOMContentLoaded', function () {
     // Function to change the player name
 
     function changeNames() {
-        player1 = prompt("Enter Player1 name");
-        player2 = prompt("Enter Player2 name");
+        let tempPlayer1 = prompt("Enter Player1 name (max 5 letters)", player1);
+        let tempPlayer2 = prompt("Enter Player2 name (max 5 letters)", player2);
 
-        if (player1 && player2) {
+        if (tempPlayer1 === null || tempPlayer2 === null) {
+            alert("Names cannot be empty. Please enter valid names.");
+            return;
+        }
+
+        if (tempPlayer1.length > 5 || tempPlayer2.length > 5) {
+            alert("Names must be 5 letters or less. Try again.");
+            changeNames();
+        } else {
+            player1 = tempPlayer1;
+            player2 = tempPlayer2;
             document.querySelector("p#Player1").innerHTML = player1;
             document.querySelector("p#Player2").innerHTML = player2;
             document.querySelector("h2#welcome").innerHTML = "Welcome to Dice Quest!";
-        } else {
-            alert("Both players must enter their names to start the game.");
+
+            // Update scores
+            document.querySelector("p#Player1Score").innerHTML = player1 + ": " + player1Score;
+            document.querySelector("p#Player2Score").innerHTML = player2 + ": " + player2Score;
         }
     }
 
