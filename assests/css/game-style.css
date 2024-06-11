@@ -34,7 +34,7 @@ body {
     border-radius: 5px;
     background-color: #2d3656;
     padding: 0 4px;
-    margin: 30px 10px 30 0px;
+    margin: 30px 10px 30px 0;
     width: 90vw;
     box-shadow: 15px 16px 10px rgba(0, 0, 0, 0.481);
 }
@@ -73,7 +73,7 @@ body {
 
 #roll-btn,
 #edit-btn, #new-game-btn {
-    margin: 10px, 15px, 25px, 10px;
+    margin: 10px 15px 25px 10px;
     padding: 10px 20px;
     border-radius: 54px;
     background-color: rgba(255, 255, 0, 0.671);

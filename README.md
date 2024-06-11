@@ -161,7 +161,7 @@ __Press Enter and your local clone will be created.__
 
 There are four media query breakpoints used: 425px, 680px, 768px, 1000px. This convenient feature allows users to easily access different sections of the website, making the browsing experience smoother and more efficient.
 
-- Game Rules: There's a section explaining the rules of Shut the Box.
+- Game Rules: There's a section explaining the rules of dice quest.
 - Reset Button: A button allows players to reset the game and start over.
 - Exit Button: A button allows players to exit the game.
 - Visuals: The game has a background video, logo, and styled buttons.
@@ -179,7 +179,6 @@ There are four media query breakpoints used: 425px, 680px, 768px, 1000px. This c
 ![footer look on phone & laptop](read-me/features/footer.PNG)
 ![404 page not found look on phone & laptop](read-me/features/page-not-found.PNG)
 
-
 ## Features to Implement
 
 - Enhanced User Interface: Improve the visual design and layout of the game for a more engaging user experience.
@@ -193,4 +192,122 @@ There are four media query breakpoints used: 425px, 680px, 768px, 1000px. This c
 - In the future, users will have the option to switch between a light and dark color scheme with a dark mode toggle.
 - Add more dice roll games into the dice quest webpage.
 
-  </details>
+</details>
+
+### Design
+
+## UX
+
+<details>
+<summary>User Experience</summary>
+<br>
+
+### Five Planes of User Experience
+
+The five planes are like layers that designers think about when making things for people to use. It starts with big ideas and end with the actual look and feel of what users interact with.
+
+#### The Strategy Plane
+
+The strategy reason for my website is to create a virtual platform for gamers that showcases the excitement and challenge of the dice quest-dice roll game, allowing users to engage with and enjoy this classic game online.
+
+#### The Scope Plane
+
+Based on the Strategy Plane, the scope of my website includes implementing the rules of "Dice Quest," allowing players to interactively roll dice and track scores over multiple rounds, providing buttons for starting the game, changing player names, and toggling sound effects, with future features including a dark theme toggle and a comprehensive view of game rules.
+
+#### The Structure Plane
+
+After the scope plane was decided, it's time to create a structure for my "Dice Quest" virtual game website. The structure includes the layout of the homepage, game interface, rules section, and user interactions such as rolling dice, and controlling game settings. This ensures a clear, logical flow and user-friendly experience for the players.
+
+![structure design](read-me/features/structure.PNG)
+
+#### The Skeleton Plane
+
+Please refer to the [Wireframes](#wireframes) section.
+
+#### The Surface Plane
+
+[View the live site here.](https://klsoundarya.github.io/dice-quest)
+
+</details>
+
+<details>
+<summary>Design Overview</summary>
+<br>
+
+#### Typography
+
+In the header and main content sections - Merriweather and Lato fonts are used. Both fonts are imported from [Google Fonts](https://fonts.google.com/) and are specified in the body selector.
+
+#### Gallery
+
+- The home page, exit page and 404 page not found background video is sourced from [Canva](https://www.canva.com/).
+
+#### Color Scheme
+
+The color scheme chosen for this website features a balanced blend of vibrant and neutral tones. The palette includes deep shades like `#4a536c`, light and airy hues such as `#ececec` and `#fff00`, complemented by refreshing accents like `#626574` and `#d7efe7`. This combination creates a dynamic yet soothing visual experience, enhancing the overall aesthetic appeal.
+
+![Primary colors used](read-me/features/color-scheme.PNG)
+</details>
+
+## Testing
+
+### Manual Testing
+
+<!-- Created Table from Table generator -->
+<details>
+<summary>User Testing</summary>
+<br>
+
+| Page   | Action                                                 | Expected Behavior                                                                                                                                                                                                                                                                                                                                                                                                                | Pass/Fail |
+|--------|--------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
+| Home   | ![index](read-me/testing-validators/index-testing.PNG)    | After conducting manual testing, it has been verified that the home page displays a banner with a background video and a "Game Rules" button that reveals the rules of the game and a "Play" button that correctly links to the play.html page. The layout, styling, and functionality of these elements provide a positive user experience, with the page elements appearing as expected and the buttons functioning correctly. | Pass      |
+| Game   | ![Game](read-me/testing-validators/game-testing.png)      | When a user clicks on the "Play" button from the index page, it will be directed to the "play.html" page, where the functionalities, including dice rolling, score tracking, name editing, and responsive design, work as intended, ensuring a reliable and enjoyable gameplay experience.                                                                                                                                       | Pass      |
+| Exit   | ![Exit](read-me/testing-validators/exit-testing.PNG)      | After the game concludes, the user has the option to either restart the game by clicking on the "Start New Game" button or exit the game by clicking on the "Exit" button. Clicking on the "Exit" button redirects the user to the thank you page. All functionalities, including game restart and exit redirection, work as intended, providing a seamless user experience.                                                     | Pass      |
+| Footer | ![footer](read-me/testing-validators/footer.PNG) | When a user clicks on any of the social media icons or a home icon (Home, Github, LinkedIn icons), each link opens in a new tab and functions correctly, providing users with seamless access to the respective platforms and home icon will take the user back to the index page.                                                                                                                                               | Pass      |
+
+- Dice Quest website is tested and verified with no issues in different browsers:
+  
+  - [Google Chrome](https://www.google.com/intl/en_in/chrome/)
+  - [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/)
+  - [Microsoft Edge](https://www.microsoft.com/en-us/edge/welcome?form=MA13FJ)
+
+- Dice Quest webpage is tested and verified that my website is responsive in various screen devices by using Google chrome web developer tools
+  
+  - Laptop
+  - Tablet
+  - Large screen mobile
+  - Desktop
+
+### Validator Testing
+
+All pages passed through the Lighthouse test
+
+- [Lighthouse test for Home Page](read-me/testing-validators/home-page.png)
+- [Lighthouse test for Game Page](read-me/testing-validators/game-page.png)
+- [Lighthouse test for Exit Page](read-me/testing-validators/exit-page.png)
+
+### HTML
+
+All pages have passed through the [W3 Markup HTML Validator](https://validator.w3.org/)
+
+- ![All pages passed through the HTML validator](read-me/testing-validators/html-validator-pass.PNG)
+
+### CSS
+
+CSS stylesheet have passed through the [W3 CSS Validator](https://jigsaw.w3.org/css-validator/)
+
+- ![CSS stylesheet passed through the CSS validator](read-me/testing-validators/css-validator-pass.PNG)
+
+### JS Hint
+
+JSHint was used to look for errors in flap.js, dice.js and game.js. No errors found.
+
+#### script.js
+
+![script.js](read-me/testing-validators/scriptjs-hint.PNG)
+
+#### game.js
+
+![game.js](read-me/testing-validators/gamejs-hint.PNG)
+
+</details>
