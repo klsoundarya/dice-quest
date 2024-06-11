@@ -305,6 +305,11 @@ footer {
             width: 40%;
         }
 
+        #play-btn {
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+        }
+
         /* Large devices (1000px and up) */
         @media screen and (min-width: 1000px) {
 
