@@ -311,3 +311,59 @@ JSHint was used to look for errors in flap.js, dice.js and game.js. No errors fo
 ![game.js](read-me/testing-validators/gamejs-hint.PNG)
 
 </details>
+
+### Bugs
+
+<details>
+<summary>Bugs Fixed</summary>
+<br>
+
+| No | Bugs                                         | Solution                                                                                                                | Notes          |
+|----|----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|----------------|
+| 1  | ![Bug 1](read-me/bugs/player-name.PNG) | Player/User name is not loading, I fixed it by targeting the element and using the innerHtml to add in the player name. | Fixed the bug  |
+| 2  | ![Bug 2](read-me/bugs/play-css.PNG)          | Modified the units value error to fix the bug.                                                                          | Fixed the bug. |
+| 3  | ![Bug 3](read-me/bugs/gamejs-hint.PNG)       | I added jshint esversion: 6 to fix the warnings in the JSHint.                                                          | Fixed the bug. |
+| 4  | ![Bug 4](read-me/bugs/exit-html.PNG)         | Removed the extra line of tag element.                                                                                  | Fixed the bug. |
+
+### Unfixed Bugs
+
+There are no more bugs to be fixed.
+
+</details>
+
+## Credits
+
+### Tools & Technologies Used
+
+The following technologies were used in this overall project.
+
+- I have used semantic [HTML](https://en.wikipedia.org/wiki/HTML5) elements appropriately, which helps the readers to understand the technologies & structure of my content.
+- Added high contrast text against the background color in many places, which improves readability for users with visual impairments.
+- Focus [CSS](https://en.wikipedia.org/wiki/CSS) styles are applied to interactive elements like links and buttons, making it easier for keyboard users to navigate your site.
+- Used media queries and responsive design principles to ensure that website is accessible on a variety of devices, including mobile phones and tablets.
+- [Favicon.io](https://favicon.io/favicon-converter/) is used to create the various favicon files for my website.
+- [Font Awesome](https://fontawesome.com/) icons were used throughout my project.
+- [cloud convert](https://cloudconvert.com/png-to-webp) was used to convert from PNG to webp.
+- I utilized Font Joy and Google Fonts for font pairing and to visualize the look and feel of my website.
+- [ChatGPT](https://chat.openai.com/), [Grammarly](https://app.grammarly.com/), [GeminiGoogle](https://gemini.google.com/app/c90bcfbefb253ced) and a [plagiarism checker](https://www.duplichecker.com/) is used to review the text, code and ensure there were no grammar or spelling mistakes.
+- [Learn UI Design](https://www.learnui.design/tools/accessible-color-generator.html) [icolorpalette](https://icolorpalette.com/4a536c_ececec_e9fbff_638f91_d7efe7) and [Thunderstruck](https://paperheartdesign.com/blog/color-palette-thunderstruck) was used to identify primary colours, compliment and contrast color combination for the website's design.
+- I used [Canva](https://www.canva.com/) to create the color scheme, readme images collage, used videos with graphics, favicon image, wireframes, and background video for the exit section page. Additionally, I used it to resize all images to a consistent size.
+- I used [Am I Responsive](https://ui.dev/amiresponsive) design to show my webiste in various screen sizes.
+- Used button audio from [Mixkit](https://mixkit.co/free-sound-effects/click/).
+- I referred to resources such as [MDN](https://developer.mozilla.org/en-US/), [stack overflow](https://stackoverflow.com/), [W3Schools](https://www.w3schools.com/css/default.asp) [geeksforgeeks]((https://www.geeksforgeeks.org/how-to-preload-an-audio-in-html5/)) for assistance in understanding code in few places and finding answers to questions relevant to my website.
+- [Visual Studio Code](https://code.visualstudio.com/) used as a remote code editor.
+- [Gitpod](https://gitpod.io) used as a cloud-based IDE for development.
+- [GitHub](https://github.com) used for secure online code storage.
+- [GitHub Pages](https://pages.github.com) used for hosting the deployed front-end site.
+- [Git](https://git-scm.com/) was used for version control by utilizing the command line terminal in VS code and GitPod to commit and Push to GitHub.
+- My project is inspired from [code institute](https://learn.codeinstitute.net/) Love Math Walkthrough Project and I took game play reference of roll the dice (dice quest) from [geeksforgeeks](https://www.geeksforgeeks.org/building-a-dice-game-using-javascript/).
+
+### Acknowledgements
+
+- I want to express my gratitude to my Code Institute mentor, [Dick Vlaanderen](https://github.com/dickvla), for his invaluable support, encouragement, and feedback throughout this project.
+- I would like to thank my Cohort Facilitator, [Amy](https://github.com/amylour), for her guidance and support, providing us with the relevant learning materials, and
+- I personally want to thank my partner for his critique review and unwavering support, belief, and feedback.
+
+### Disclaimer
+
+> I Used my previous project readme as a reference to write the documentation (my previous project link is: <https://github.com/klsoundarya/Tales-from-South-India>).
