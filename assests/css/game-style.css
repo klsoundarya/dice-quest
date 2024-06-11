@@ -83,6 +83,10 @@ body {
     cursor: pointer;
 }
 
+#roll-btn {
+    margin-bottom: 10px;
+}
+
 #new-game-btn {
     text-decoration: none;
 }
