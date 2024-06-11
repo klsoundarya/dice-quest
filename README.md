@@ -300,7 +300,7 @@ CSS stylesheet have passed through the [W3 CSS Validator](https://jigsaw.w3.org/
 
 ### JS Hint
 
-JSHint was used to look for errors in flap.js, dice.js and game.js. No errors found.
+JSHint was used to look for errors in script.js and game.js. No errors found.
 
 #### script.js
 
