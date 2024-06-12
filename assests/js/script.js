@@ -83,11 +83,11 @@ document.addEventListener('DOMContentLoaded', function () {
             if (rounds >= maxRounds) {
                 let winner;
                 if (player1Score > player2Score) {
-                    winner = player1 + " is the overall winner! Click 'Start New Game' to play again.";
+                    winner = player1 + " is the overall winner!";
                 } else if (player1Score < player2Score) {
-                    winner = player2 + " is the overall winner! Click 'Start New Game' to play again.";
+                    winner = player2 + " is the overall winner!";
                 } else {
-                    winner = "It's a draw! Click 'Start New Game' to play again.";
+                    winner = "It's a draw!";
                 }
 
                 document.querySelector("h2#welcome").innerHTML = winner;

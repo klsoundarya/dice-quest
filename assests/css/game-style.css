@@ -127,12 +127,13 @@ body {
     cursor: pointer;
 }
 
-#rules {
+.rules {
     color: white;
     padding-bottom: 5px;
     font-size: 12px;
     letter-spacing: 1px;
     font-family: 'Lucida Sans', Verdana, sans-serif;
+    margin-bottom: 5px;
 }
 
 
