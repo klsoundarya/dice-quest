@@ -118,6 +118,14 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('roll-btn').addEventListener('click', rollTheDice);
     document.getElementById('edit-btn').addEventListener('click', changeNames);
 
+    // Function to toggle theme
+    function toggleTheme() {
+        let gameContainer = document.body;
+        gameContainer.classList.toggle("dark-mode");
+    }
+
+    document.getElementById('theme-btn').addEventListener('click', toggleTheme);
+
 });
 
 

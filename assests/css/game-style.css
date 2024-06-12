@@ -14,9 +14,9 @@ main {
 
 #welcome {
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 10px;
-    color: #006400;
+    color: #FF6600;
 }
 
 body {
@@ -72,7 +72,8 @@ body {
 /* button styling for roll Dice and edit names */
 
 #roll-btn,
-#edit-btn, #new-game-btn {
+#edit-btn,
+#new-game-btn {
     margin: 10px 15px 25px 10px;
     padding: 10px 20px;
     border-radius: 54px;
@@ -99,7 +100,7 @@ body {
     box-shadow: 2px 5px 5px rgb(255, 255, 255);
 }
 
-/**************** reset, exit and mute button styling ******************/
+/**************** exit, toggle and mute button styling ******************/
 
 .settings-toggle {
     margin-bottom: 50px;
@@ -110,7 +111,7 @@ body {
 }
 
 .game-Page {
-    color: #eb8d74;
+    color: #FF6600;
     text-decoration: none;
     font-size: 20px;
 }

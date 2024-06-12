@@ -21,6 +21,7 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="assests/css/style.css">
     <link rel="stylesheet" href="assests/css/game-style.css">
+    <link rel="stylesheet" href="assests/css/toggle.css">
 
     <!-- Preload Audio -->
     <link rel="preload" href="assests/audios/dice-sound.mp3" as="audio">
@@ -77,6 +78,12 @@
                         class="fa-solid fa-volume-high"></i><b>Mute</b></a>
 
                 <a href="#" id="unmute-audio" class="hidden"><i class="fa-solid fa-volume-xmark"></i>Unmute</a>
+                <br>
+                <!-- theme toggle button -->
+                <div id="theme-btn">
+                    <button type="button" onclick="toggleTheme()"><i
+                            class="fa-solid fa-circle-half-stroke"></i>Switch</button>
+                </div>
             </div>
             <p class="rules"> Click the "Start New Game" button to begin a new game with a fresh set of players.</p>
             <p class="rules">Users can continue playing with the same players by clicking "Roll Dice" after 10 rounds or

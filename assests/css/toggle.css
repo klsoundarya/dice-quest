@@ -1,0 +1,28 @@
+/* toggle mode is from w3 schools (https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_toggle_dark_mode) */
+
+body {
+    background-color: white;
+}
+
+.dark-mode {
+    background-color: black;
+}
+
+#theme-btn button {
+    color: #FF6600;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 12px;
+    padding: 4px;
+    margin-top: 3px;
+} 
+
+#theme-btn :hover {
+    background: transparent;
+    font-size: 26px;
+    box-shadow: 5px 5px 5px rgb(255, 255, 255);
+    transition: 0.5s;
+    cursor: pointer;
+}
