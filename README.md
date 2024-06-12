@@ -189,7 +189,6 @@ There are four media query breakpoints used: 425px, 680px, 768px, 1000px. This c
 - Additional Sound Effects: Add more sound effects to enhance the gaming experience.
 - Leaderboard: Implement a leaderboard to display high scores or achievements.
 - Mobile App Integration: Develop a mobile app version of the game for a more immersive experience on smartphones and tablets.
-- In the future, users will have the option to switch between a light and dark color scheme with a dark mode toggle.
 - Add more dice roll games into the dice quest webpage.
 
 </details>
@@ -212,7 +211,7 @@ The strategy reason for my website is to create a virtual platform for gamers th
 
 #### The Scope Plane
 
-Based on the Strategy Plane, the scope of my website includes implementing the rules of "Dice Quest," allowing players to interactively roll dice and track scores over multiple rounds, providing buttons for starting the game, changing player names, and toggling sound effects, with future features including a dark theme toggle and a comprehensive view of game rules.
+Based on the Strategy Plane, the scope of my website includes implementing the rules of "Dice Quest," allowing players to interactively roll dice and track scores over multiple rounds, providing buttons for starting the game, changing player names, and toggling sound effects and a comprehensive view of game rules.
 
 #### The Structure Plane
 
